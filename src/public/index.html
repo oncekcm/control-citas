@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Dashboard</h2>
+            <ul>
+                <li>Administrador</li>
+                <li>Médicos</li>
+                <li>Pacientes</li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar">
+                    <button>Buscar</button>
+                </div>
+            </div>
+            <div class="content">
+                <h1>Lista de Usuarios</h1>
+                <button class="new-user">Crear nuevo usuario</button>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre Completo</th>
+                            <th>Nombre de Usuario</th>
+                            <th>Rol</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Beimar Choque Mamani</td>
+                            <td>BCMam</td>
+                            <td>admin</td>
+                            <td>
+                                <button class="edit">Editar</button>
+                                <button class="delete">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Dr. Alice Smith</td>
+                            <td>AlSmi</td>
+                            <td>General Medicine</td>
+                            <td>
+                                <button class="edit">Editar</button>
+                                <button class="delete">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Dr. Emily Johnson</td>
+                            <td>EmJn</td>
+                            <td>Pediatrics</td>
+                            <td>
+                                <button class="edit">Editar</button>
+                                <button class="delete">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
