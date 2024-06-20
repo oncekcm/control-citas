@@ -77,3 +77,18 @@ export async function deleteCita(req, res) {
     res.status(500).json({ message: error.message });
   }
 }
+
+export async function getCitasPendientesDePaciente(req, res) {
+  const { pacienteId } = req.params;
+  try {
+    const citasPendientes = await Cita.findAll({
+      where: {
+        pacienteId,
+        estado: 'pendiente',
+      },
+    });
+    res.json(citasPendientes);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+}
