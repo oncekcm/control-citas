@@ -14,27 +14,37 @@ This is a simple REST API using Javascript Technologies and PostgreSQL.
 
 ├── package.json
 ├── sql
-│   └── db.sql
+│   
 └── src
     ├── app.js
+    ├── index.js
     ├── controllers
-        |   
-    │   └── medic.controller.js
+    │   ├── citaController.js
+    │   ├── consultorioController.js
+    │   ├── colaController.js
+    │   ├── fichaController.js
+    │   ├── medicController.js
+    │   ├── pacienteController.js
+    │   └── pagoController.js
     ├── database
     │   └── database.js
-    ├── index.js
     ├── models
-    │   ├── Medic.js
+    │   ├── Cita.js
     │   ├── Consultorio.js
+    │   ├── Cola.js
+    │   ├── Ficha.js
+    │   ├── Medic.js
     │   ├── Paciente.js
     │   ├── Pago.js
-    │   ├── Cita.js
     │   └── relations.js
     └── routes
-        ├── medic.routes.js
-        ├── consultorio.routes.js
-        ├── paciente.routes.js
-        ├── pago.routes.js
-        └── cita.routes.js
+        ├── citaRoutes.js
+        ├── consultorioRoutes.js
+        ├── colaRoutes.js
+        ├── fichaRoutes.js
+        ├── medicRoutes.js
+        ├── pacienteRoutes.js
+        └── pagoRoutes.js
+
 
 
